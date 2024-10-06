@@ -10,7 +10,7 @@
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="#">
+        <form id="login-form">
             <div class="input-field">
                 <label for="email">E-mail</label>
                 <div class="input-wrapper">
@@ -27,12 +27,23 @@
                 </div>
             </div>
 
-            <div class="checkbox-field">
+            <!-- <div class="checkbox-field">
                 <input type="checkbox" id="remember-me" name="remember-me">
                 <label for="remember-me">Lembrar-me</label>
             </div>
 
+            <a href="#" class="register-link" id="register-link">Cadastrar</a> -->
+            <div class="checkbox-and-register">
+                <div class="checkbox-field">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Lembrar-me</label>
+                </div>
+                <a href="#" class="register-link" id="register-link">Cadastrar</a>
+            </div>
+            
+            
             <button type="submit" class="login-button">Entrar</button>
+            
             
             <a href="#" class="forgot-password" id="forgot-password">Esqueceu sua senha?</a>
         </form>
@@ -41,7 +52,14 @@
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <img src="https://images7.memedroid.com/images/UPLOADED177/56bfc64a16b50.jpeg" alt="Imagem de Esqueci a Senha" class="modal-image">
+            <img src="https://www.meuzapzap.com/imagens/thumb/meuzapzap14280523022741Screenshot20230528112702.jpg" alt="Imagem de Esqueci a Senha" class="modal-image">
+        </div>
+    </div>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="https://media.makeameme.org/created/quer-dizer-ento-e754484fe6.jpg" alt="Imagem de Sucesso" class="modal-image">
         </div>
     </div>
 
