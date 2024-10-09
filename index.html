@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
+    <title>Trabalho Desenvolvimento Web - Login</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
+
 <body>
     <div class="login-container">
         <h2>Welcome</h2>
+        <p>Please Log in to your account.</p>
         <form id="login-form">
             <div class="input-field">
-                <label for="email">E-mail</label>
+                <label for="email"></label>
                 <div class="input-wrapper">
                     <i class="fas fa-envelope icon-email"></i>
                     <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
@@ -26,23 +27,23 @@
                 <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
             </div>
             
-            
             <div class="checkbox-and-register">
                 <div class="checkbox-field">
                     <input type="checkbox" id="remember-me" name="remember-me">
                     <label for="remember-me">Lembrar-me</label>
                 </div>
-                <a href="#" class="register-link" id="register-link">Cadastrar</a>
             </div>
             
-            
-            <button type="submit" class="login-button">Entrar</button>
-            
+            <div class="button-wrapper">
+                <button type="submit" class="login-button">Entrar</button>
+                <button type="button" class="register-button" id="register-button">Cadastrar</button>
+            </div>
             
             <a href="#" class="forgot-password" id="forgot-password">Esqueceu sua senha?</a>
         </form>
     </div>
 
+   
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
@@ -50,10 +51,35 @@
         </div>
     </div>
 
+   
     <div id="success-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <img src="https://media.makeameme.org/created/quer-dizer-ento-e754484fe6.jpg" alt="Imagem de Sucesso" class="modal-image">
+        </div>
+    </div>
+
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            <form id="register-form">
+                <h3>Faca seu Cadastro</h3>
+                <div class="input-field">
+                    <label for="email"></label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope icon-email"></i>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <i class="fa fa-lock icon-password"></i>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="register-modal-button">Cadastrar</button>
+            </form>
         </div>
     </div>
 
