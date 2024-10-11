@@ -1,7 +1,9 @@
 Trabalho de Desenvolvimento Web - Página de Login
 
 Descrição
-Este projeto é um sistema de login desenvolvido em HTML, CSS e JavaScript, que utiliza o IndexedDB para armazenamento local de usuários. O sistema permite que os usuários se cadastrem e façam login, além de fornecer uma interface amigável e responsiva.
+
+Este projeto é um sistema de login desenvolvido em HTML, CSS e JavaScript, que utiliza o IndexedDB para armazenamento local de usuários. 
+O sistema permite que os usuários se cadastrem e façam login, além de fornecer uma interface amigável e responsiva.
 
 Tecnologias Utilizadas
 
@@ -10,7 +12,7 @@ HTML: Estrutura básica do documento e elementos de formulário.
 CSS: Estilização e design do layout.
 
 Adicional para Estudo de caso: 
-JavaScript: Lógica para manipulação de formulários, verificação de dados e interações com o IndexedDB.
+JavaScript: Lógica para manipulação de formulários e modais, verificação de dados e interações com o IndexedDB.
 IndexedDB: Armazenamento local de dados do usuário.
 
 Funcionalidades
